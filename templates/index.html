@@ -2,15 +2,18 @@
 
 {% block header %}
     <title>Korean Baptist Church</title>
-    <h1 class="content" style="text-align: center;">Korean Baptist Church of Roanoke</h1>
 {% endblock %}
 
 
 {% block body %}
-    <h1 class="content text-center">HOME PAGE</h1>
 
+    <div class="carouselOverlay">
+        <h1 class="content text-center">Welcome</h1>
+        <h5 class="content text-center">Korean Baptist Church of Roanoke</h5>
+        <p class="content text-center">Serving the Roanoke community and building relationships.</p>
+    </div>
     <!-- image div -->
-    <div style="height: 100%">
+    <div class="carousel">
         <!-- image carousel begin -->
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
@@ -27,7 +30,6 @@
                     <p>St. Peter's Basilica Interior</p>
                 </div>
                 <img class="d-block" id="img-fluid" src="{{ url_for('static', filename='media/church_2.jpg') }}" alt="Second slide">
-
             </div>
             <div class="carousel-item">
                 <img class="d-block" id="img-fluid" src="{{ url_for('static', filename='media/church_3.jpg') }}" alt="Third slide">

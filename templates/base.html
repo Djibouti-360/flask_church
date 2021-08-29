@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='code/main.css') }}">
 
+    <!-- favicon -->
+    <link rel="icon" href="{{ url_for('static', filename='media/favicon.ico') }}">
+
     <!-- navbar begin -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -42,17 +45,26 @@
 </head>
     {% block body %}{% endblock %}
 
-    <footer class="footer">
+    <footer class="footer" style="padding: 0; margin: 0;">
         <div class="container">
             <div class="row">
                 <div class="col text-center">
                     Contact
+                    <div class="col text-center">
+                        <a href="tel:+15407724222">540-772-4222</a>
+                    </div>
                 </div>
                 <div class="col text-center">
                     Address
+                    <div class="col text-center">
+                        <p>5422 Starkey Road <br> Roanoke, VA 24018</p>
+                    </div>
                 </div>
                 <div class="col text-center">
-                    Company Info
+                    Designed By
+                    <div class="col text-center">
+                        <p>Companion WebDesign (TM)</p>
+                    </div>
                 </div>
             </div>
         </div>

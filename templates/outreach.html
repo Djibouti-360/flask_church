@@ -2,10 +2,36 @@
 
 {% block header %}
     <title>Korean Baptist Church</title>
-    <h1 class="content" style="text-align: center;">Korean Baptist Church of Roanoke</h1>
 {% endblock %}
 
 
 {% block body %}
-    <h1 class="content text-center">OUTREACH PAGE</h1>
+
+    <div class="container">
+        <div class="col">
+            <div class="row justify-content-center">
+                <div style="height: auto; width: auto;">
+                    <img class="img-fluid mx-auto d-block" id="img-fluid" src="{{ url_for('static', filename='media/outreach_1.jpg') }}" alt="Third slide">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content" style="padding: 15px;">
+        <h1 class="content text-left">
+            Outreach
+        </h1>
+        <h6>Our involvement in our local community is ......</h6>
+
+        <br><br>
+        <h4 class="content text-left">
+            Community 1
+        </h4>
+        <p>Our involvement with the local community is ......</p>
+
+        <h4 class="content text-left">
+            Community 2
+        </h4>
+        <p>Our involvement with the local community is ......</p>
+    </div>
 {% endblock %}
