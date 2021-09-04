@@ -7,51 +7,55 @@
 
 {% block body %}
 
-    <div class="carouselOverlay">
-        <h1 class="content text-center">Welcome</h1>
-        <h5 class="content text-center">Korean Baptist Church of Roanoke</h5>
-        <p class="content text-center">Serving the Roanoke community and building relationships.</p>
-    </div>
-    <!-- image div -->
-    <div class="carousel">
-        <!-- image carousel begin -->
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block" id="img-fluid" src="{{ url_for('static', filename='media/church_1.jpg') }}" alt="First slide">
+    <!-- <div id="textCarouselContainer"> -->
+        <div class="carouselOverlay" id="text">
+            <h1 class="content text-center">Welcome</h1>
+            <h5 class="content text-center">Korean Baptist Church of Roanoke</h5>
+            <p class="content text-center">Serving the Roanoke community and building relationships.</p>
+        </div>
+        <!-- image div -->
+        <div class="carousel" id="carousel">
+            <!-- image carousel begin -->
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block" id="img-fluid" src="{{ url_for('static', filename='media/church_1.jpg') }}" alt="First slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>First Picture</h5>
+                            <p>Painting by Michelangelo</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>First Picture</h5>
-                        <p>Painting by Michelangelo</p>
+                        <h5>Second Picture</h5>
+                        <p>St. Peter's Basilica Interior</p>
+                    </div>
+                    <img class="d-block" id="img-fluid" src="{{ url_for('static', filename='media/church_2.jpg') }}" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block" id="img-fluid" src="{{ url_for('static', filename='media/church_3.jpg') }}" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third Picture</h5>
+                        <p>Vatican Church Interior</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block" id="img-fluid" src="{{ url_for('static', filename='media/church_4.jpg') }}" alt="Fourth slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Fourth Picture</h5>
+                        <p>St John the Baptist</p>
+                    </div>
                 </div>
             </div>
-            <div class="carousel-item">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Second Picture</h5>
-                    <p>St. Peter's Basilica Interior</p>
-                </div>
-                <img class="d-block" id="img-fluid" src="{{ url_for('static', filename='media/church_2.jpg') }}" alt="Second slide">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block" id="img-fluid" src="{{ url_for('static', filename='media/church_3.jpg') }}" alt="Third slide">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Third Picture</h5>
-                    <p>Vatican Church Interior</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img class="d-block" id="img-fluid" src="{{ url_for('static', filename='media/church_4.jpg') }}" alt="Fourth slide">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Fourth Picture</h5>
-                    <p>St John the Baptist</p>
-                </div>
-            </div>
+            <!-- image carousel end -->
         </div>
-        <!-- image carousel end -->
 
-        <!-- some other div -->
-        <div>
-            <h5>dude where's my car!</h5>
-        </div>
+    <!-- end of text carousel container -->
+    <!-- </div> -->
+
+    <!-- some other div -->
+    <div>
+        <h5>dude where's my car!</h5>
     </div>
 
     <!-- bulletin and news div -->
