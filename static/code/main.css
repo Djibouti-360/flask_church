@@ -41,3 +41,8 @@ body {
 #eachRow{
     padding: 5px 0px 5px 0px;
 }
+
+#map {
+    height: 400px; /* height is 400 pixels */
+    width: 100%; /* width is 100% of the page */
+}

@@ -4,19 +4,19 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 # set up index route
-@app.route('/', methods=['POST','GET'])
+@app.route('/')
 def index():
     return render_template('index.html')
 
-@app.route('/outreach', methods=['POST','GET'])
+@app.route('/outreach')
 def outreach():
     return render_template('outreach.html')
 
-@app.route('/about', methods=['POST','GET'])
+@app.route('/about')
 def about():
     return render_template('about.html')
 
-@app.route('/give', methods=['POST','GET'])
+@app.route('/give')
 def give():
     return render_template('give.html')
 
