@@ -1,6 +1,6 @@
 Welcome!
  
-Folders:
+Folders:\
 env = environment needed for encapsulation of project in a specific environment 
 static = contains style-sheets and media files 
 templates = contains html pages for the website 
