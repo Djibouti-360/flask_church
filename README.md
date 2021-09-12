@@ -8,4 +8,3 @@ templates = contains html pages for the website \
 Files: \
 .gitignore = instructions for version control to ignore local files \
 app.py = instructions for the application setup for the Flask framework \
- \
